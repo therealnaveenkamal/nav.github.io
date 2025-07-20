@@ -32,25 +32,25 @@
           <tr style="padding:0px">
             <td style="padding:2.5%;width:60%;vertical-align:middle">
               <h1>
-                Leonid Keselman
+                Naveenraj Kamalakannan
               </h1>
-              <p>I am a PhD student at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a>, part of the <a href="https://www.scs.cmu.edu/">School of Computer Science</a> at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, where I work on 3D computer vision. My PhD advisor is <a href="http://www.cs.cmu.edu/~hebert/">Martial Hebert</a>.
+              <p>I am a MS student in Computer Engineering at <a href="https://engineering.nyu.edu/">New York University</a>. Currently, I am an AI and Data Science Associate Intern at <a href="https://www.jpmorgan.com/">J.P. Morgan</a>, working on agentic platforms for Asset and Wealth Management. I work on stroke rehabilitation research at the <a href="https://cds.nyu.edu/">NYU Center for Data Science</a> and <a href="https://med.nyu.edu/">NYU Langone</a> under the supervision of <a href="https://math.nyu.edu/~cfgranda/">Prof. Carlos Fernandez-Granda</a>, and will continue this research after the summer.
               </p>
               <p>
-                From 2011 to 2017, I worked at <a href="https://www.intel.com">Intel</a>, as part of <a href="https://www.intelrealsense.com/">Intel RealSense</a>. I primarily designed computer vision algorithms for efficient hardware ASICs, including the Intel RealSense <a href="https://software.intel.com/en-us/articles/realsense-r200-camera">R200</a> and <a href="https://software.intel.com/en-us/realsense/d400">D400</a> RGB-D sensors. Additionally, I worked on <a href="https://github.com/IntelRealSense/librealsense">software APIs</a>, <a href="https://patents.google.com/patent/US9992474B2">active illumination systems</a>, <a href="https://patents.google.com/patent/US9304597">human-computer interaction devices</a>, and helped develop demos for trade shows, including CES 2012-2016.
+                My research interests are broadly in large language model optimization and efficient training systems. I am excited about a range of topics in deep learning infrastructure, including distributed training architectures, GPU acceleration frameworks, reinforcement learning from human feedback, and model alignment techniques. I have published research in medical imaging and signal processing, and actively contribute to open-source projects including Microsoft's DeepSpeed and Snowflake's ArcticInference.
               </p>
               <p>
-                I have an MS in Computer Science (AI focus) from <a href="http://cs.stanford.edu">Stanford University</a>, where I was a research assistant for <a href="http://svl.stanford.edu/">Silvio Savarese</a> and a teaching assistant for <a href="http://svl.stanford.edu/">Fei-Fei Li</a> (<a href="http://vision.stanford.edu/teaching/cs131_fall1617/">CS131</a> & <a href="http://cs231n.stanford.edu/2017/">CS231N</a>). I have a BS in EECS from <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I worked in <a href="https://people.eecs.berkeley.edu/~pister/">Kris Pister's</a> lab.
+                I completed my Bachelor of Technology in Electronics and Communication Engineering at <a href="https://vit.ac.in/">Vellore Institute of Technology</a>, where I worked on medical imaging research with <a href="https://orcid.org/0000-0003-4243-9006">Prof. Sudhakar MS</a>, developing the Exponential Pixelating Integral Transform for chest X-ray abnormality detection.
               </p>
               <p style="text-align:center">
-                <a target="_blank" href="https://mailhide.io/e/B8TyS"> Email</a> &nbsp;/&nbsp;
-                <a href="https://github.com/leonidk">GitHub</a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=GCYG4GoAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/lkeselman"> LinkedIn </a>
+                <a target="_blank" href="mailto:naveenraj.k@nyu.edu"> Email</a> &nbsp;/&nbsp;
+                <a href="https://github.com/therealnaveenkamal">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=mnWK5uEAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/navz"> LinkedIn </a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/circle_bw_crop.jpg">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="https://avatars.githubusercontent.com/u/80611084?v=4">
             </td>
           </tr>
         </table>
@@ -58,13 +58,14 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
+              <h2>Research & Publications</h2>
               <p>
-                I'm interested in computer vision, machine learning, optimization, graphics and robotics.
+                I'm interested in computer vision, machine learning, deep learning, reinforcement learning, and AI applications in healthcare and robotics.
               </p>
             </td>
           </tr>
         </table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
           {% for post in site.posts %}
@@ -82,6 +83,9 @@
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
+              {% if post.paper %}
+              <a href="{{post.paper}}">paper</a> /
+              {% endif %}
               {% if post.arxiv %}
               <a href="{{post.arxiv}}">arxiv</a> /
               {% endif %}
@@ -117,8 +121,8 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Intel Projects</h2>
-              <p>Besides my work on the RealSense depth sensors and the publications above, a sampling of my publicly disclosed work
+              <h2>Professional Experience</h2>
+              <p>Real-world experience building AI systems, crunching data, and automating stuff across finance, industrial, and healthcare.
               </p>
             </td>
           </tr>
@@ -127,7 +131,7 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'Intel' %}
+          {% if cat == 'experience' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -135,9 +139,13 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
-              <em>{{post.categories}} {{post.course}}</em>
+              <em>{{post.venue}}</em>
               <br>
+              {% if post.duration %}
+              {{post.duration}}
+              {% else %}
               {{ post.date | date: "%Y-%m-%d" }}
+              {% endif %}
 
               <br>
               {% if post.website %}
@@ -145,6 +153,9 @@
               {% endif %}
               {% if post.paper %}
               <a href="{{post.paper}}">paper</a> /
+              {% endif %}
+              {% if post.recommendation %}
+              <a href="{{post.recommendation}}">recommendation</a> /
               {% endif %}
               {% if post.patent %}
               <a href="{{post.patent}}">patent</a> /
@@ -184,8 +195,8 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Other Projects</h2>
-              <p> These include coursework, side projects and unpublished research work. 
+              <h2>Open Source Contributions</h2>
+              <p>Contributions to major open source projects including Microsoft DeepSpeed and Snowflake ArcticInference.
               </p>
             </td>
           </tr>
@@ -194,7 +205,7 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat != 'research' and cat != 'Intel' %}
+          {% if cat == 'opensource' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -202,7 +213,99 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
-              <em>{{post.categories}} {{post.course}}</em>
+              <em>{{post.venue}}</em>
+              <br>
+              {% if post.pr %}
+              <a href="{{post.pr}}">pull request</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}">website</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
+        <br>
+        <br>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Notable Projects</h2>
+              <p>Cool projects that actually won things and made people go "wow, that's neat!"
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'project' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              <em>{{post.venue}}</em>
+              {% if post.award %}
+              <br><strong>{{post.award}}</strong>
+              {% endif %}
+              {% if post.grant %}
+              <br><strong>{{post.grant}}</strong>
+              {% endif %}
+              <br>
+              {{ post.date | date: "%Y-%m-%d" }}
+
+              <br>
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}">website</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
+        <br>
+        <br>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Other Projects</h2>
+              <p>Fun side projects where I get to play with robots, build AI stuff, and generally tinker with cool tech.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'robotics' or cat == 'web' or cat == 'ai' or cat == 'blockchain' or cat == 'ml' or cat == 'iot' or cat == 'coursework' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              <em>{{post.venue}}</em>
               <br>
               {{ post.date | date: "%Y-%m-%d" }}
 
