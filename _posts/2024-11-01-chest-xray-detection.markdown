@@ -9,4 +9,4 @@ authors: "<strong>Kamalakannan N</strong>, Macharla S, Kanimozhi M, Sudhakar M S
 venue: "Computers in Biology and Medicine, Volume 182"
 paper: https://doi.org/10.1016/j.compbiomed.2024.109093
 ---
-Developed a diagnostic model introducing Exponential Pixelating Integral transforms, fractals, and an adaptive splines-based model, achieving an overall accuracy of 99.63%. Utilized Multivariate Adaptive Regression Splines (MARS) ensemble model with accuracy and F1 metrics ranging from 98.46% to 99.45% and 96.53% to 98.10% respectively. 
+Built a chest X-ray abnormality detection model using Exponential Pixelating Integral transforms and fractal features. Implemented Multivariate Adaptive Regression Splines (MARS) ensemble, achieving 99.63% accuracy and F1 scores up to 98.10%. 
